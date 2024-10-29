@@ -1,0 +1,123 @@
+#aiovd_shortcode_doc {
+  th, .submit {
+    display: none;
+  }
+
+  td {
+    padding: 0;
+
+    h3 {
+      margin: 0 0 15px 0;
+    }
+  }
+}
+
+.aiovd_disabled {
+  opacity: .3;
+  cursor: pointer;
+
+  td {
+    input, label, textarea {
+      pointer-events: none;
+    }
+  }
+}
+
+.sources {
+  th {
+    display: none;
+  }
+
+  .description {
+    font-style: italic;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+
+  .tab-info {
+    margin: 10px 0;
+    color: blue;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+
+    & > span {
+      cursor: pointer;
+
+      &.current {
+        font-weight: bold;
+      }
+
+      span {
+        color: black;
+      }
+    }
+  }
+
+  .video-sources {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .video-source {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+      padding: 10px;
+      background: dimgrey;
+      border-radius: 5px;
+      color: #fff;
+      width: 14%;
+      position: relative;
+      cursor: pointer;
+
+      &.aiovd_pro {
+        .switch{
+          opacity: .4;
+          pointer-events: none;
+        }
+      }
+
+      i{
+        text-shadow: 1px 1px 3px #000;
+        color: magenta;
+      }
+
+      img{
+        background: #fff;
+        width: 50px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 2px #555;
+      }
+
+      .source-name{
+        color: gold;
+        margin: 10px 0 2px;
+        text-shadow: 0px 0px 3px #000;
+        background: rgba(0,0,0, .3);
+        padding: 3px 5px;
+        border-radius: 3px;
+      }
+
+      .pro-badge{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: deeppink;
+        padding: 3px;
+        font-weight: 600;
+        font-size: 11px;
+        color: #fff;
+        border-top-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        box-shadow: -1px 1px 2px #000;
+      }
+
+    }
+  }
+
+}

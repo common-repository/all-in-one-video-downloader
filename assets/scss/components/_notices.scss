@@ -1,0 +1,30 @@
+/** ---Create Page Notice--- **/
+.create-page-notice, .view-page-notice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .notice_info {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 8px;
+    }
+  }
+
+  .notice_actions {
+    margin-right: 15px;
+
+    a {
+      margin: 0 3px;
+    }
+  }
+
+}
+
+.view-page-notice {
+  .notice_actions a.button-primary {
+    background: deeppink;
+  }
+}

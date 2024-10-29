@@ -1,0 +1,72 @@
+.aiovd-how-to-download {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &-title {
+    text-align: center;
+    margin-bottom: 50px;
+
+    span {
+      font-weight: bold;
+      color: #a84bff;
+    }
+  }
+
+  .how-to-boxes {
+    display: flex;
+
+    @media (max-width: 767px) {
+      flex-flow: column;
+    }
+
+    .how-to-box {
+      text-align: center;
+      padding: 50px 20px;
+      width: 33.33%;
+
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+
+      img {
+        width: 80px;
+        margin: 0 auto;
+      }
+
+      h4 {
+        margin: 15px 0;
+        text-shadow: 0 0 1px #555;
+      }
+
+      p {
+        color: #444;
+      }
+
+      &:nth-child(1) {
+        background-color: rgba(#20e938, .1);
+
+        h4 {
+          color: rgba(#20e938, .7);
+        }
+      }
+
+      &:nth-child(2) {
+        background-color: rgba(#9877fc, .1);
+
+
+        h4 {
+          color: rgba(#9877fc, .7);
+        }
+      }
+
+      &:nth-child(3) {
+        background-color: rgba(#fb44b8, .1);
+
+        h4 {
+          color: rgba(#fb44b8, .7);
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,53 @@
+.aiovd-supported-websites {
+  padding: 50px 0;
+
+  &-title {
+    text-align: center;
+    margin-bottom: 30px;
+
+    span {
+      font-weight: bold;
+      color: #a84bff;
+    }
+  }
+
+  .websites-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .website {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 5px;
+    color: #333;
+
+    @media (max-width: 767px) {
+      width: 46%;
+    }
+
+    &.bg_green {
+      background: rgba($green, .3);
+    }
+
+    &.bg_purple {
+      background: rgba($purple, .3);
+    }
+
+    &.bg_pink {
+      background: rgba($pink, .3);
+    }
+
+    img {
+      width: 35px;
+      border-radius: 6px;
+      margin-right: 5px;
+    }
+  }
+
+}
